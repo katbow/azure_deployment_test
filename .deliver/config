@@ -1,11 +1,11 @@
 APP="azure_deployment_test"
 
 BUILD_HOST="51.140.117.78"
-BUILD_USER="oxleasadmin"
+BUILD_USER="root"
 BUILD_AT="/home/oxleasadmin/azure_deployment_test/builds"
 
 PRODUCTION_HOSTS="51.140.117.78"
-PRODUCTION_USER="oxleasadmin"
+PRODUCTION_USER="root"
 DELIVER_TO="/home/oxleasadmin"
 
 pre_erlang_clean_compile() {
