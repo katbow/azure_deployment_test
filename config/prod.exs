@@ -29,8 +29,7 @@ use Mix.Config
 config :azure_deployment_test, AzureDeploymentTest.Repo,
   adapter: Ecto.Adapters.Postgres,
   url: [host: "localhost"],
-  pool_size: "10",
-  ssl: true
+  pool_size: "10"
 # Do not print debug messages in production
 config :logger, level: :info
 
