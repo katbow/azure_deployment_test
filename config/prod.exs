@@ -20,7 +20,7 @@ use Mix.Config
 #
 config :azure_deployment_test, AzureDeploymentTest.Endpoint,
   http: [port: {:system, "PORT"}],
-  url: [host: "localhost", port: {:system, "PORT"}],
+  url: [host: "...", port: {:system, "PORT"}],
   server: true,
   root: ".",
   version: Mix.Project.config[:version],
@@ -28,6 +28,14 @@ config :azure_deployment_test, AzureDeploymentTest.Endpoint,
 
 # Do not print debug messages in production
 config :logger, level: :info
+
+config :azure_deployment_test, AzureDeploymentTest.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  username: "postgres",
+  password: "postgres",
+  database: "azure_deployment_test_dev",
+  hostname: "localhost",
+  pool_size: 10
 
 # ## SSL Support
 #
