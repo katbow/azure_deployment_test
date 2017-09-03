@@ -6,6 +6,10 @@ defmodule AzureDeploymentTest.PageController do
   end
 
   def file(conn, _params) do
-    render conn, "file.html"
+    file = File.read!("web/static/assets/images/certfile")
+    conn
+    # render conn, "index.html"
+    # render conn, test: test
+    |> send_resp(200, file)
   end
 end
