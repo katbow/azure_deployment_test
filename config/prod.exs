@@ -24,11 +24,11 @@ config :azure_deployment_test, AzureDeploymentTest.Endpoint,
   server: true,
   root: ".",
   version: Mix.Project.config[:version],
+  debug_errors: true,
   cache_static_manifest: "priv/static/manifest.json"
 
 # Do not print debug messages in production
-# config :logger, level: :info
-config :logger, :console, format: "[$level] $message\n"
+config :logger, level: :info
 
 config :azure_deployment_test, AzureDeploymentTest.Repo,
   adapter: Ecto.Adapters.Postgres,
