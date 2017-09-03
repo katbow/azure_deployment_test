@@ -9,7 +9,7 @@ defmodule AzureDeploymentTest.Endpoint do
   # when deploying your static files in production.
   plug Plug.Static,
     at: "/", from: :azure_deployment_test, gzip: false,
-    only: ~w(css fonts images .well-known js favicon.ico robots.txt)
+    only: ~w(css fonts .well-known images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
