@@ -25,6 +25,7 @@ pre_erlang_clean_compile() {
 
     cd '$BUILD_AT'
     mkdir -p priv/static
+    cp -r web/static/assets/.well-known priv/static/.well-known
     npm run deploy $SILENCE
   "
 
