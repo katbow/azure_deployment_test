@@ -9,5 +9,5 @@ defmodule AzureDeploymentTest.PageController do
     conn
     |> put_resp_content_type("application/octet-stream", "utf-8")
     |> send_file(200, "web/static/assets/images/F7mVdvnEuajgfVIFRzVcuK5-vyURg3GKi6rQZ_opp8k")
-  enid
+  end
 end
