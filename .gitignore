@@ -24,3 +24,7 @@ erl_crash.dump
 /config/prod.secret.exs
 
 .deliver/releases/
+
+safe-keeping
+
+test-nginx.config
