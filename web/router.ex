@@ -17,7 +17,6 @@ defmodule AzureDeploymentTest.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
-    # get "/.well-known/acme-challenge/LVE11x1004ntLGhaqTexNwyeFd002MNeCdPe8lX9MQs", PageController, :file
   end
 
   # Other scopes may use custom stacks.
