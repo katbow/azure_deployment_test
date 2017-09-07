@@ -25,7 +25,7 @@ erl_crash.dump
 
 .deliver/releases/
 
-safe-keeping
+default_nginx_config
 
 test-nginx.config
 
