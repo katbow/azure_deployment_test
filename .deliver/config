@@ -1,12 +1,12 @@
 APP="azure_deployment_test"
 
-BUILD_HOST="51.140.116.95"
+BUILD_HOST="51.140.71.199"
 BUILD_USER="root"
-BUILD_AT="/home/oxleasadmin/azure_deployment_test/builds"
+BUILD_AT="/home/hladmin/azure_deployment_test/builds"
 
-PRODUCTION_HOSTS="51.140.116.95"
+PRODUCTION_HOSTS="51.140.71.199"
 PRODUCTION_USER="root"
-DELIVER_TO="/home/oxleasadmin"
+DELIVER_TO="/home/hladmin"
 
 pre_erlang_clean_compile() {
   status "Installing NPM dependencies"
